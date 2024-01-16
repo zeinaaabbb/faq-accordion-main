@@ -13,10 +13,10 @@
 
 const question = document.querySelectorAll(".question");
 
-question.forEach((question)=> {
-  quesion.addEventListener("mouseover", (event) => {
-  console.log(event)
-})
+// question.forEach((question)=> {
+//   quesion.addEventListener("mouseover", (event) => {
+
+// })
 
 
 
