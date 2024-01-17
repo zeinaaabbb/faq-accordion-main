@@ -1,20 +1,18 @@
 
 
-
-
 const showAnswer = (e) => {
-  // console.log(e);
-  answerId = e.currentTarget.id.split("-").pop();
-  console.log(document.getElementsByClassName("answer")[answerId - 1]);
-  console.log(answerId);
-  console.log(answerId - 1);
-  console.log(e.currentTarget.id);
-  document.getElementsByClassName("answer")[answerId - 1].classList.toggle("answer")
-  // console.log(document.getElementsByClassName("answer")[answerId - 1].classList);
+  // Get the ID(e.g. faq-item-question-3) from the event
+  answerId = e.currentTarget.id
+// Use split to break up faq-item-question-3 and pop off last element which is the number
+  answerIdNumber = answerId.split("-").pop();
+  console.log(answerId)
+  // Get all elements with a classname answer
+  const answers = document.getElementsByClassName("answer")
+  console.log(answers)
+// use number to get answer element and toggle icon plus classlist
+  answers[answerIdNumber-1].classList.toggle("icon-plus")
 
 };
-
-
 
 
 
