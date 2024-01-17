@@ -1,0 +1,95 @@
+/* font-family: 'Cormorant Garamond', serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+
+/* - White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%) */
+
+/* Weights: 400, 600, 700 */
+
+:root{
+    --ff-serif: 'Work Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fw-bold-lg: 900;
+    --fs-400: 0.8rem;
+    --fs-500: 1.2rem;
+    --fs-900: 3.5rem;
+    --clr-purple-400:hsl(292, 16%, 49%);
+    --clr-purple-600:hsl(292, 42%, 14%);
+    --clr-purple-br-400: hsl(275, 100%, 97%);
+    --cl--bright-purple: rgb(173,40,235);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+button:hover > h5 {
+  color: var(--cl--bright-purple);
+}
+
+h1 {
+  color: var(--clr-purple-600);
+  font-weight: var(--fw-bold-lg);
+  font-size: var(--fs-900);
+
+}
+h5 {
+  color: var(--clr-purple-600);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-500);
+  font-weight: bold;
+  line-height: 3;
+}
+
+p {
+  color: var(--clr-purple-400);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-400);
+}
+/*
+.answer, .icon-minus {
+  display: none;
+} */
+
+.icon-plus {
+  display: inline;
+}
