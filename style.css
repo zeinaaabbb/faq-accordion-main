@@ -86,10 +86,11 @@ p {
   font-size: var(--fs-400);
 }
 
-.answer, .icon-minus {
+.answer,
+.icon-reduce {
   display: none;
 }
 
-.icon-plus {
+.icon-expand{
   display: inline;
 }
